@@ -1,94 +1,98 @@
-name: Solarized (dark)
-uuid: A4299D9B-1DE5-4BC4-87F6-A757E71B1597
+%YAML 1.1
+---
+# Solarized theme for Sublime Text
+name: Solarized ($style)
+uuid: $uuid
 settings:
 
+# Editor settings
 - settings:
-    background: '#002B36'
-    caret: '#839496'
-    foreground: '#839496'
-    gutter: '#073642'
-    invisibles: '#073642'
-    lineHighlight: '#073642'
-    selection: '#657B83'
-    selectionBorder: '#586E75'
-    selectionForeground: '#002B36'
+    background: $base03
+    caret: $base0
+    foreground: $base0
+    gutter: $base02
+    invisibles: $base02
+    lineHighlight: $base02
+    selection: $base00
+    selectionBorder: $base01
+    selectionForeground: $base03
 
 - name: Comment
   scope: comment
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: String
   scope: string
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: StringNumber
   scope: string
   settings:
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: Regexp
   scope: string.regexp
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: Number
   scope: constant.numeric
   settings:
-    foreground: '#D33682'
+    foreground: $magenta
 
 - name: Variable
   scope: variable.language, variable.other
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: Keyword
   scope: keyword
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: Storage
   scope: storage
   settings:
     fontStyle: ''
-    foreground: '#859900'
+    foreground: $green
 
 - name: Class name
   scope: entity.name.class, entity.name.type.class
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: Function name
   scope: entity.name.function
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: Variable start
   scope: punctuation.definition.variable
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: Embedded code markers
   scope: punctuation.section.embedded.begin, punctuation.section.embedded.end
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: Built-in constant
   scope: constant.language, meta.preprocessor
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: Support.construct
   scope: support.function.construct, keyword.other.new
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: User-defined constant
   scope: constant.character, constant.other
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: Inherited class
   scope: entity.other.inherited-class
@@ -102,27 +106,27 @@ settings:
   scope: entity.name.tag
   settings:
     fontStyle: bold
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: Tag start/end
   scope: punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end
   settings:
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: Tag attribute
   scope: entity.other.attribute-name
   settings:
-    foreground: '#93A1A1'
+    foreground: $base1
 
 - name: Library function
   scope: support.function
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: Continuation
   scope: punctuation.separator.continuation
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: Library constant
   scope: support.constant
@@ -131,17 +135,17 @@ settings:
 - name: Library class/type
   scope: support.type, support.class
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: Library Exception
   scope: support.type.exception
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: Special
   scope: keyword.other.special-method
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: Library variable
   scope: support.other.variable
@@ -154,19 +158,19 @@ settings:
 - name: Quoted String
   scope: string.quoted.double, string.quoted.single
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: Quotes
   scope: punctuation.definition.string.begin, punctuation.definition.string.end
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'CSS: Property name (body)'
   scope: entity.name.tag.css, support.type.property-name.css, meta.property-name.css,
     support.type.property-name.scss
   settings:
     fontStyle: ''
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'CSS: @ rules (purple)'
   scope: punctuation.definition.keyword.scss, punctuation.definition.keyword.css,
@@ -180,7 +184,7 @@ settings:
     meta.at-rule.import.css, variable.other.less, variable.declaration.less, variable.interpolation.less,
     meta.at-rule.media.scss
   settings:
-    foreground: '#6C71c4'
+    foreground: $violet
 
 - name: 'CSS: Numeric Value (blue)'
   scope: constant.numeric.css, keyword.other.unit.css, keyword.unit.css, constant.other.color.rgb-value.css,
@@ -188,7 +192,7 @@ settings:
     punctuation.definition.constant.scss, punctuation.definition.constant.css, constant.other.rgb-value.css
   settings:
     fontStyle: ''
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'CSS: String, value and constants (azure)'
   scope: variable.parameter.url.scss, meta.property-value.css, meta.property-value.scss,
@@ -199,17 +203,17 @@ settings:
     support.constant.property-value.css
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'CSS: !Important (red)'
   scope: keyword.other.important.css
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'CSS: Standard color value (orange)'
   scope: support.constant.color, invalid.deprecated.color.w3c-non-standard-color-name.scss
   settings:
-    foreground: '#CB4b16'
+    foreground: $orange
 
 - name: 'CSS: : , () (body)'
   scope: punctuation.terminator.rule.css, punctuation.section.function.css, punctuation.section.function.scss,
@@ -217,95 +221,95 @@ settings:
     entity.name.tag.wildcard.scss, entity.name.tag.wildcard.css, entity.name.tag.reference.scss
   settings:
     fontStyle: ''
-    foreground: '#657B83'
+    foreground: $base00
 
 - name: 'CSS: Selector > [] and non-spec tags (body)'
   scope: meta.selector.css
   settings:
     fontStyle: ''
-    foreground: '#657B83'
+    foreground: $base00
 
 - name: 'CSS: Tag (green)'
   scope: entity.name.tag.css, entity.name.tag.scss
   settings:
     fontStyle: ''
-    foreground: '#859900'
+    foreground: $green
 
 - name: CSS .class (yellow)
   scope: entity.other.attribute-name.class.css, entity.other.less.mixin
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'CSS: #id (yellow)'
   scope: source.css entity.other.attribute-name.id
   settings:
     fontStyle: bold
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: CSS :pseudo (orange)
   scope: entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'SCSS: Variables (pink)'
   scope: variable, variable.scss
   settings:
-    foreground: '#D33682'
+    foreground: $magenta
 
 - name: 'JS: Function Name'
   scope: meta.function.js, entity.name.function.js, support.function.dom.js
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'JS: Source'
   scope: text.html.basic source.js.embedded.html
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'JS: Function'
   scope: storage.type.function.js
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'JS: Numeric Constant'
   scope: constant.numeric.js
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'JS: []'
   scope: meta.brace.square.js
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'JS: Storage Type'
   scope: storage.type.js
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: ()
   scope: meta.brace.round, punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js
   settings:
-    foreground: '#93A1A1'
+    foreground: $base1
 
 - name: '{}'
   scope: meta.brace.curly.js
   settings:
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'HTML: Doctype'
   scope: entity.name.tag.doctype.html, meta.tag.sgml.html, string.quoted.double.doctype.identifiers-and-DTDs.html
   settings:
     fontStyle: italic
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'HTML: Comment Block'
   scope: comment.block.html
   settings:
     fontStyle: italic
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'HTML: Script'
   scope: entity.name.tag.script.html
@@ -316,13 +320,13 @@ settings:
   scope: source.css.embedded.html string.quoted.double.html
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'HTML: Text'
   scope: text.html.ruby
   settings:
     fontStyle: bold
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'HTML: ='
   scope: text.html.basic meta.tag.other.html, text.html.basic meta.tag.any.html, text.html.basic
@@ -330,25 +334,25 @@ settings:
     text.html.basic source.js.embedded.html, punctuation.separator.key-value.html
   settings:
     fontStyle: ''
-    foreground: '#657B83'
+    foreground: $base00
 
 - name: 'HTML: something='
   scope: text.html.basic entity.other.attribute-name.html
   settings:
-    foreground: '#657B83'
+    foreground: $base00
 
 - name: 'HTML: "'
   scope: text.html.basic meta.tag.structure.any.html punctuation.definition.string.begin.html,
     punctuation.definition.string.begin.html, punctuation.definition.string.end.html
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'HTML: <tag>'
   scope: entity.name.tag.block.any.html
   settings:
     fontStyle: bold
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'HTML: style'
   scope: source.css.embedded.html entity.name.tag.style.html
@@ -369,385 +373,385 @@ settings:
   scope: source.css.embedded.html, comment.block.html
   settings:
     fontStyle: italic
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'Ruby: Variable definition'
   scope: punctuation.definition.variable.ruby
   settings:
     fontStyle: ''
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'Ruby: Function Name'
   scope: meta.function.method.with-arguments.ruby
   settings:
-    foreground: '#657B83'
+    foreground: $base00
 
 - name: 'Ruby: Variable'
   scope: variable.language.ruby
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Ruby: Function'
   scope: entity.name.function.ruby
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'Ruby: Keyword Control'
   scope: keyword.control.ruby, keyword.control.def.ruby
   settings:
     fontStyle: bold
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Ruby: Class'
   scope: keyword.control.class.ruby, meta.class.ruby
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Ruby: Class Name'
   scope: entity.name.type.class.ruby
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Ruby: Keyword'
   scope: keyword.control.ruby
   settings:
     fontStyle: ''
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Ruby: Support Class'
   scope: support.class.ruby
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Ruby: Special Method'
   scope: keyword.other.special-method.ruby
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Ruby: Constant'
   scope: constant.language.ruby, constant.numeric.ruby
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Ruby: Constant Other'
   scope: variable.other.constant.ruby
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Ruby: :symbol'
   scope: constant.other.symbol.ruby
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Ruby: Punctuation Section '''''
   scope: punctuation.section.embedded.ruby, punctuation.definition.string.begin.ruby,
     punctuation.definition.string.end.ruby
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Ruby: Special Method'
   scope: keyword.other.special-method.ruby
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'PHP: Include'
   scope: keyword.control.import.include.php
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'Ruby: erb ='
   scope: text.html.ruby meta.tag.inline.any.html
   settings:
     fontStyle: ''
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'Ruby: erb ""'
   scope: text.html.ruby punctuation.definition.string.begin, text.html.ruby punctuation.definition.string.end
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'PHP: Quoted Single'
   scope: punctuation.definition.string.begin, punctuation.definition.string.end
   settings:
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'PHP: Class Names'
   scope: support.class.php
   settings:
-    foreground: '#93A1A1'
+    foreground: $base1
 
 - name: 'PHP: []'
   scope: keyword.operator.index-start.php, keyword.operator.index-end.php
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'PHP: Array'
   scope: meta.array.php
   settings:
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'PHP: Array()'
   scope: meta.array.php support.function.construct.php, meta.array.empty.php support.function.construct.php
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'PHP: Array Construct'
   scope: support.function.construct.php
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'PHP: Array Begin'
   scope: punctuation.definition.array.begin, punctuation.definition.array.end
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'PHP: Numeric Constant'
   scope: constant.numeric.php
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'PHP: New'
   scope: keyword.other.new.php
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'PHP: ::'
   scope: keyword.operator.class
   settings:
     fontStyle: ''
-    foreground: '#93A1A1'
+    foreground: $base1
 
 - name: 'PHP: Other Property'
   scope: variable.other.property.php
   settings:
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'PHP: Class'
   scope: storage.modifier.extends.php, storage.type.class.php, keyword.operator.class.php
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'PHP: Semicolon'
   scope: punctuation.terminator.expression.php
   settings:
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'PHP: Inherited Class'
   scope: meta.other.inherited-class.php
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'PHP: Storage Type'
   scope: storage.type.php
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'PHP: Function'
   scope: entity.name.function.php
   settings:
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'PHP: Function Construct'
   scope: support.function.construct.php
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'PHP: Function Call'
   scope: entity.name.type.class.php, meta.function-call.php, meta.function-call.static.php,
     meta.function-call.object.php
   settings:
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'PHP: Comment'
   scope: keyword.other.phpdoc
   settings:
     fontStyle: ''
-    foreground: '#839496'
+    foreground: $base0
 
 - name: 'PHP: Source Emebedded'
   scope: source.php.embedded.block.html
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'PHP: Storage Type Function'
   scope: storage.type.function.php
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'C: constant'
   scope: constant.numeric.c
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'C: Meta Preprocessor'
   scope: meta.preprocessor.c.include, meta.preprocessor.macro.c
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'C: Keyword'
   scope: keyword.control.import.define.c, keyword.control.import.include.c
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'C: Function Preprocessor'
   scope: entity.name.function.preprocessor.c
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'C: include <something.c>'
   scope: meta.preprocessor.c.include string.quoted.other.lt-gt.include.c, meta.preprocessor.c.include
     punctuation.definition.string.begin.c, meta.preprocessor.c.include punctuation.definition.string.end.c
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'C: Function'
   scope: support.function.C99.c, support.function.any-method.c, entity.name.function.c
   settings:
     fontStyle: ''
-    foreground: '#93A1A1'
+    foreground: $base1
 
 - name: 'C: "'
   scope: punctuation.definition.string.begin.c, punctuation.definition.string.end.c
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'C: Storage Type'
   scope: storage.type.c
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'diff: header'
   scope: meta.diff, meta.diff.header
   settings:
     fontStyle: italic
-    foreground: '#EEE8D5'
+    foreground: $base2
 
 - name: 'diff: deleted'
   scope: markup.deleted
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'diff: changed'
   scope: markup.changed
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'diff: inserted'
   scope: markup.inserted
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: reST raw
   scope: text.restructuredtext markup.raw
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Other: Removal'
   scope: other.package.exclude, other.remove
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Other: Add'
   scope: other.add
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Tex: {}'
   scope: punctuation.section.group.tex , punctuation.definition.arguments.begin.latex,
     punctuation.definition.arguments.end.latex, punctuation.definition.arguments.latex
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Tex: {text}'
   scope: meta.group.braces.tex
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Tex: Other Math'
   scope: string.other.math.tex
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Tex: {var}'
   scope: variable.parameter.function.latex
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'Tex: Math \\'
   scope: punctuation.definition.constant.math.tex
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Tex: Constant Math'
   scope: text.tex.latex constant.other.math.tex, constant.other.general.math.tex,
     constant.other.general.math.tex, constant.character.math.tex
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Tex: Other Math String'
   scope: string.other.math.tex
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
-- name: 'Tex: $'
+- name: 'Tex: $$'
   scope: punctuation.definition.string.begin.tex, punctuation.definition.string.end.tex
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Tex: \label'
   scope: keyword.control.label.latex, text.tex.latex constant.other.general.math.tex
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Tex: \label { }'
   scope: variable.parameter.definition.label.latex
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Tex: Function'
   scope: support.function.be.latex
   settings:
     fontStyle: ''
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Tex: Support Function Section'
   scope: support.function.section.latex
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'Tex: Support Function'
   scope: support.function.general.tex
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Tex: Comment'
   scope: punctuation.definition.comment.tex, comment.line.percentage.tex
@@ -758,63 +762,63 @@ settings:
   scope: keyword.control.ref.latex
   settings:
     fontStyle: ''
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Python: storage'
   scope: storage.type.class.python, storage.type.function.python, storage.modifier.global.python
   settings:
     fontStyle: ''
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Python: import'
   scope: keyword.control.import.python, keyword.control.import.from.python
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'Python: Support.exception'
   scope: support.type.exception.python
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Shell: builtin'
   scope: support.function.builtin.shell
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Shell: variable'
   scope: variable.other.normal.shell
   settings:
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'Shell: DOT_FILES'
   scope: source.shell
   settings:
     fontStyle: ''
-    foreground: '#268BD2'
+    foreground: $blue
 
 - name: 'Shell: meta scope in loop'
   scope: meta.scope.for-in-loop.shell, variable.other.loop.shell
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'Shell: ""'
   scope: punctuation.definition.string.end.shell, punctuation.definition.string.begin.shell
   settings:
     fontStyle: ''
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Shell: Meta Block'
   scope: meta.scope.case-block.shell, meta.scope.case-body.shell
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'Shell: []'
   scope: punctuation.definition.logical-expression.shell
   settings:
     fontStyle: ''
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: 'Shell: Comment'
   scope: comment.line.number-sign.shell
@@ -825,73 +829,73 @@ settings:
   scope: keyword.other.import.java
   settings:
     fontStyle: ''
-    foreground: '#CB4B16'
+    foreground: $orange
 
 - name: 'Java: meta-import'
   scope: storage.modifier.import.java
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'Java: Class'
   scope: meta.class.java storage.modifier.java
   settings:
     fontStyle: ''
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Java: /* comment */'
   scope: source.java comment.block
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'Java: /* @param */'
   scope: comment.block meta.documentation.tag.param.javadoc keyword.other.documentation.param.javadoc
   settings:
     fontStyle: ''
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'Perl: variables'
   scope: punctuation.definition.variable.perl, variable.other.readwrite.global.perl,
     variable.other.predefined.perl, keyword.operator.comparison.perl
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - name: 'Perl: functions'
   scope: support.function.perl
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: 'Perl: comments'
   scope: comment.line.number-sign.perl
   settings:
     fontStyle: italic
-    foreground: '#586E75'
+    foreground: $base01
 
 - name: 'Perl: quotes'
   scope: punctuation.definition.string.begin.perl, punctuation.definition.string.end.perl
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: 'Perl: \char'
   scope: constant.character.escape.perl
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - Name: Markdown punctuation
   scope: markup.list, text.html.markdown punctuation.definition, meta.separator.markdown
   settings:
-    foreground: '#CB4b16'
+    foreground: $orange
 
 - Name: Markdown heading
   scope: markup.heading
   settings:
-    foreground: '#268BD2'
+    foreground: $blue
 
 - Name: Markdown text inside some block element
   scope: markup.quote, meta.paragraph.list
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - Name: Markdown em
   scope: markup.italic
@@ -908,74 +912,74 @@ settings:
     meta.link.reference.markdown punctuation.definition.constant, meta.link.reference.markdown
     constant.other.reference
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
 
 - Name: Markdown linebreak
   scope: meta.paragraph.markdown meta.dummy.line-break
   settings:
-    background: '#6C71c4'
+    background: $violet
 
 - name: SublimeLinter Annotations
   scope: sublimelinter.notes
   settings:
-    background: '#eee8d5'
-    foreground: '#eee8d5'
+    background: $base2
+    foreground: $base2
 
 - name: SublimeLinter Error Outline
   scope: sublimelinter.outline.illegal
   settings:
-    background: '#93a1a1'
-    foreground: '#93a1a1'
+    background: $base1
+    foreground: $base1
 
 - name: SublimeLinter Error Underline
   scope: sublimelinter.underline.illegal
   settings:
-    background: '#dc322f'
+    background: $red
 
 - name: SublimeLinter Warning Outline
   scope: sublimelinter.outline.warning
   settings:
-    background: '#839496'
-    foreground: '#839496'
+    background: $base0
+    foreground: $base0
 
 - name: SublimeLinter Warning Underline
   scope: sublimelinter.underline.warning
   settings:
-    background: '#b58900'
+    background: $yellow
 
 - name: SublimeLinter Violation Outline
   scope: sublimelinter.outline.violation
   settings:
-    background: '#657b83'
-    foreground: '#657b83'
+    background: $base00
+    foreground: $base00
 
 - name: SublimeLinter Violation Underline
   scope: sublimelinter.underline.violation
   settings:
-    background: '#cb4b16'
+    background: $orange
 
 - name: SublimeBracketHighlighter
   scope: brackethighlighter.all
   settings:
-    background: '#002b36'
-    foreground: '#cb4b16'
+    background: $base03
+    foreground: $orange
 
 - name: 'Find In Files: File Name'
   scope: entity.name.filename.find-in-files
   settings:
-    foreground: '#2AA198'
+    foreground: $cyan
 
 - name: GitGutter deleted
   scope: markup.deleted.git_gutter
   settings:
-    foreground: '#DC322F'
+    foreground: $red
 
 - name: GitGutter inserted
   scope: markup.inserted.git_gutter
   settings:
-    foreground: '#859900'
+    foreground: $green
 
 - name: GitGutter changed
   scope: markup.changed.git_gutter
   settings:
-    foreground: '#B58900'
+    foreground: $yellow
