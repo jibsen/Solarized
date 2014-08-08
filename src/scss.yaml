@@ -1,0 +1,4 @@
+- name: 'SCSS: Variables (pink)'
+  scope: variable, variable.scss
+  settings:
+    foreground: $magenta

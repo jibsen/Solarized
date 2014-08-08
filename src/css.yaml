@@ -1,0 +1,87 @@
+- name: 'CSS: Property name (body)'
+  scope: entity.name.tag.css, support.type.property-name.css, meta.property-name.css,
+    support.type.property-name.scss
+  settings:
+    fontStyle: ''
+    foreground: $base0
+
+- name: 'CSS: @ rules (purple)'
+  scope: punctuation.definition.keyword.scss, punctuation.definition.keyword.css,
+    keyword.control.at-rule.charset.css, keyword.control.at-rule.charset.scss, keyword.control.each.css,
+    keyword.control.each.scss, keyword.control.else.css, keyword.control.else.scss,
+    keyword.control.at-rule.import.css, keyword.control.at-rule.import.scss, keyword.control.at-rule.fontface.css,
+    keyword.control.at-rule.fontface.scss, keyword.control.for.css, keyword.control.for.scss,
+    keyword.control.at-rule.function.css, keyword.control.at-rule.function.scss, keyword.control.if.css,
+    keyword.control.if.scss, keyword.control.at-rule.include.scss, keyword.control.at-rule.media.css,
+    keyword.control.at-rule.media.scss, keyword.control.at-rule.font-face.css, keyword.control.at-rule.font-face.scss,
+    meta.at-rule.import.css, variable.other.less, variable.declaration.less, variable.interpolation.less,
+    meta.at-rule.media.scss
+  settings:
+    foreground: $violet
+
+- name: 'CSS: Numeric Value (blue)'
+  scope: constant.numeric.css, keyword.other.unit.css, keyword.unit.css, constant.other.color.rgb-value.css,
+    constant.numeric.scss, constant.other.color.rgb-value.scss, keyword.other.unit.scss,
+    punctuation.definition.constant.scss, punctuation.definition.constant.css, constant.other.rgb-value.css
+  settings:
+    fontStyle: ''
+    foreground: $blue
+
+- name: 'CSS: String, value and constants (azure)'
+  scope: variable.parameter.url.scss, meta.property-value.css, meta.property-value.scss,
+    support.constant.property-value.scss, support.constant.font-name.scss, string.quoted.single.css,
+    string.quoted.double.css, constant.character.escaped.css, string.quoted.variable.parameter.url,
+    punctuation.definition.string.begin.scss, punctuation.definition.string.begin.css,
+    punctuation.definition.string.end.scss, punctuation.definition.string.end.css,
+    support.constant.property-value.css
+  settings:
+    fontStyle: ''
+    foreground: $cyan
+
+- name: 'CSS: !Important (red)'
+  scope: keyword.other.important.css
+  settings:
+    foreground: $red
+
+- name: 'CSS: Standard color value (orange)'
+  scope: support.constant.color, invalid.deprecated.color.w3c-non-standard-color-name.scss
+  settings:
+    foreground: $orange
+
+- name: 'CSS: : , () (body)'
+  scope: punctuation.terminator.rule.css, punctuation.section.function.css, punctuation.section.function.scss,
+    punctuation.separator.key-value.csspunctuation.scss, punctuation.css, keyword.operator.less,
+    entity.name.tag.wildcard.scss, entity.name.tag.wildcard.css, entity.name.tag.reference.scss
+  settings:
+    fontStyle: ''
+    foreground: $base00
+
+- name: 'CSS: Selector > [] and non-spec tags (body)'
+  scope: meta.selector.css
+  settings:
+    fontStyle: ''
+    foreground: $base00
+
+- name: 'CSS: Tag (green)'
+  scope: entity.name.tag.css, entity.name.tag.scss
+  settings:
+    fontStyle: ''
+    foreground: $green
+
+- name: CSS .class (yellow)
+  scope: entity.other.attribute-name.class.css, entity.other.less.mixin
+  settings:
+    fontStyle: ''
+    foreground: $yellow
+
+- name: 'CSS: #id (yellow)'
+  scope: source.css entity.other.attribute-name.id
+  settings:
+    fontStyle: bold
+    foreground: $yellow
+
+- name: CSS :pseudo (orange)
+  scope: entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css
+  settings:
+    fontStyle: ''
+    foreground: $orange

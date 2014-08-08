@@ -1,0 +1,22 @@
+- name: 'diff: header'
+  scope: meta.diff, meta.diff.header
+  settings:
+    fontStyle: italic
+    foreground: $base2
+
+- name: 'diff: deleted'
+  scope: markup.deleted
+  settings:
+    fontStyle: ''
+    foreground: $red
+
+- name: 'diff: changed'
+  scope: markup.changed
+  settings:
+    fontStyle: ''
+    foreground: $orange
+
+- name: 'diff: inserted'
+  scope: markup.inserted
+  settings:
+    foreground: $green

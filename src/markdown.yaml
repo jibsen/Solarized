@@ -1,0 +1,36 @@
+- Name: Markdown punctuation
+  scope: markup.list, text.html.markdown punctuation.definition, meta.separator.markdown
+  settings:
+    foreground: $orange
+
+- Name: Markdown heading
+  scope: markup.heading
+  settings:
+    foreground: $blue
+
+- Name: Markdown text inside some block element
+  scope: markup.quote, meta.paragraph.list
+  settings:
+    foreground: $cyan
+
+- Name: Markdown em
+  scope: markup.italic
+  settings:
+    fontStyle: italic
+
+- Name: Markdown strong
+  scope: markup.bold
+  settings:
+    fontStyle: bold
+
+- Name: Markdown reference
+  scope: markup.underline.link.markdown, meta.link.inline punctuation.definition.metadata,
+    meta.link.reference.markdown punctuation.definition.constant, meta.link.reference.markdown
+    constant.other.reference
+  settings:
+    foreground: $yellow
+
+- Name: Markdown linebreak
+  scope: meta.paragraph.markdown meta.dummy.line-break
+  settings:
+    background: $violet

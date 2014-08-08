@@ -1,0 +1,15 @@
+- name: 'Python: storage'
+  scope: storage.type.class.python, storage.type.function.python, storage.modifier.global.python
+  settings:
+    fontStyle: ''
+    foreground: $green
+
+- name: 'Python: import'
+  scope: keyword.control.import.python, keyword.control.import.from.python
+  settings:
+    foreground: $orange
+
+- name: 'Python: Support.exception'
+  scope: support.type.exception.python
+  settings:
+    foreground: $yellow

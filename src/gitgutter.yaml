@@ -1,0 +1,14 @@
+- name: GitGutter deleted
+  scope: markup.deleted.git_gutter
+  settings:
+    foreground: $red
+
+- name: GitGutter inserted
+  scope: markup.inserted.git_gutter
+  settings:
+    foreground: $green
+
+- name: GitGutter changed
+  scope: markup.changed.git_gutter
+  settings:
+    foreground: $yellow

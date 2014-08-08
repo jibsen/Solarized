@@ -1,0 +1,40 @@
+- name: 'JS: Function Name'
+  scope: meta.function.js, entity.name.function.js, support.function.dom.js
+  settings:
+    foreground: $yellow
+
+- name: 'JS: Source'
+  scope: text.html.basic source.js.embedded.html
+  settings:
+    fontStyle: ''
+    foreground: $yellow
+
+- name: 'JS: Function'
+  scope: storage.type.function.js
+  settings:
+    foreground: $blue
+
+- name: 'JS: Numeric Constant'
+  scope: constant.numeric.js
+  settings:
+    foreground: $cyan
+
+- name: 'JS: []'
+  scope: meta.brace.square.js
+  settings:
+    foreground: $blue
+
+- name: 'JS: Storage Type'
+  scope: storage.type.js
+  settings:
+    foreground: $blue
+
+- name: 'JS: ()'
+  scope: meta.brace.round, punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js
+  settings:
+    foreground: $base1
+
+- name: 'JS: {}'
+  scope: meta.brace.curly.js
+  settings:
+    foreground: $base0

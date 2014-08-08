@@ -1,0 +1,29 @@
+- name: 'Java: import'
+  scope: keyword.other.import.java
+  settings:
+    fontStyle: ''
+    foreground: $orange
+
+- name: 'Java: meta-import'
+  scope: storage.modifier.import.java
+  settings:
+    fontStyle: ''
+    foreground: $base01
+
+- name: 'Java: Class'
+  scope: meta.class.java storage.modifier.java
+  settings:
+    fontStyle: ''
+    foreground: $yellow
+
+- name: 'Java: /* comment */'
+  scope: source.java comment.block
+  settings:
+    fontStyle: ''
+    foreground: $base01
+
+- name: 'Java: /* @param */'
+  scope: comment.block meta.documentation.tag.param.javadoc keyword.other.documentation.param.javadoc
+  settings:
+    fontStyle: ''
+    foreground: $base01

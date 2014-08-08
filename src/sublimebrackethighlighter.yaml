@@ -1,0 +1,5 @@
+- name: SublimeBracketHighlighter
+  scope: brackethighlighter.all
+  settings:
+    background: $base03
+    foreground: $orange
